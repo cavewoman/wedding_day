@@ -1,0 +1,34 @@
+<div class="section-header">Menu</div>
+
+<div class="menu-section">
+  <div class="row course nav-btn">Starters</div>
+  <%= for menu_item <- @menu_items do %>
+    <%= if menu_item.section == "Starter" do %>
+        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+    <% end %>
+  <% end %>
+</div>
+<div class="menu-section">
+  <div class="row course nav-btn">Entrees</div>
+  <%= for menu_item <- @menu_items do %>
+    <%= if menu_item.section == "Entree" do %>
+        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+    <% end %>
+  <% end %>
+</div>
+<div class="menu-section">
+  <div class="row course nav-btn">Sides</div>
+  <%= for menu_item <- @menu_items do %>
+    <%= if menu_item.section == "Side" do %>
+        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+    <% end %>
+  <% end %>
+</div>
+<div class="menu-section">
+  <div class="row course nav-btn">Dessert</div>
+  <%= for menu_item <- @menu_items do %>
+    <%= if menu_item.section == "Dessert" do %>
+        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+    <% end %>
+  <% end %>
+</div>

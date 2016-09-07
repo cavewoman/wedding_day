@@ -1,0 +1,25 @@
+/* This file is for your main application css. */
+.header-image { width: 100%; }
+
+.nav-btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 25px;
+}
+.post-image { width: 100%; }
+.section-header {
+  background: lavender;
+  text-align: center;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-family: monospace;
+  color: darkseagreen;
+}
+.course { text-align: center; }
+.menu-item {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 15px;
+}

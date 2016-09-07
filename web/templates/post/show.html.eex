@@ -1,0 +1,28 @@
+<h2>Show post</h2>
+
+<ul>
+
+  <li>
+    <strong>Post image:</strong>
+    <%= @post.post_image %>
+  </li>
+
+  <li>
+    <strong>Profile image:</strong>
+    <%= @post.profile_image %>
+  </li>
+
+  <li>
+    <strong>Handle:</strong>
+    <%= @post.handle %>
+  </li>
+
+  <li>
+    <strong>Instagram response:</strong>
+    <%= @post.instagram_response %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: post_path(@conn, :edit, @post) %>
+<%= link "Back", to: post_path(@conn, :index) %>

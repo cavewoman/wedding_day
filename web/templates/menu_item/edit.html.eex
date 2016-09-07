@@ -1,0 +1,6 @@
+<h2>Edit menu item</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: menu_item_path(@conn, :update, @menu_item) %>
+
+<%= link "Back", to: menu_item_path(@conn, :index) %>

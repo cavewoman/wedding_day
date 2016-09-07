@@ -1,0 +1,23 @@
+<h2>Show menu item</h2>
+
+<ul>
+
+  <li>
+    <strong>Section:</strong>
+    <%= @menu_item.section %>
+  </li>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @menu_item.type %>
+  </li>
+
+  <li>
+    <strong>Details:</strong>
+    <%= @menu_item.details %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: menu_item_path(@conn, :edit, @menu_item) %>
+<%= link "Back", to: menu_item_path(@conn, :index) %>

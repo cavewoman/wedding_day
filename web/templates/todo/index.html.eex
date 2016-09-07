@@ -1,0 +1,6 @@
+<div class="section-header">Todo</div>
+<%= for todo <- @todos do %>
+  <div class="row">
+    <%= link todo.name, to: todo_path(@conn, :show, todo), class: "btn btn-default nav-btn" %>
+  </div>
+<% end %>

@@ -6,6 +6,7 @@ defmodule WeddingDay.MenuItem do
     field :type, :string
     field :details, :string
     field :name, :string
+    field :image_url, :string
 
     timestamps()
   end
@@ -15,7 +16,7 @@ defmodule WeddingDay.MenuItem do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:section, :type, :details, :name])
+    |> cast(params, [:section, :type, :details, :name, :image_url])
     |> validate_required([:section, :type, :details, :name])
   end
 end

@@ -1,23 +1,14 @@
-<h2>Show menu item</h2>
+<div class='menu-item-container'>
+  <div class="menu-item-header">
+    <div class="menu-item-text">
+      <%= @menu_item.name %>
+    </div>
+  </div>
 
-<ul>
-
-  <li>
-    <strong>Section:</strong>
-    <%= @menu_item.section %>
-  </li>
-
-  <li>
-    <strong>Type:</strong>
-    <%= @menu_item.type %>
-  </li>
-
-  <li>
-    <strong>Details:</strong>
-    <%= @menu_item.details %>
-  </li>
-
-</ul>
-
-<%= link "Edit", to: menu_item_path(@conn, :edit, @menu_item) %>
-<%= link "Back", to: menu_item_path(@conn, :index) %>
+  <div class="row">
+    <div class='col-sm-2 col-xs-2 col-md-2'></div>
+    <div class='col-sm-8 col-xs-8 col-md-8 menu-item-details'><%= @menu_item.details %></div>
+    <div class='col-sm-2 col-xs-2 col-md-2'></div>
+  </div>
+  <%= link "Back", to: menu_item_path(@conn, :index), class: "nav-btn footer-btn" %>
+</div>

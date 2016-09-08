@@ -1,18 +1,12 @@
-<h2>Show todo</h2>
+<div class='todo-container'>
+  <div class='row'>
+    <div class='<%= "col-sm-12 col-xs-12 col-md-12 todo-name #{@todo.title}" %>' style='<%= "background-image: url(\"#{@todo.image_url}\")" %>'><%= @todo.name %></div>
+  </div>
 
-<ul>
-
-  <li>
-    <strong>Name:</strong>
-    <%= @todo.name %>
-  </li>
-
-  <li>
-    <strong>Details:</strong>
-    <%= @todo.details %>
-  </li>
-
-</ul>
-
-<%= link "Edit", to: todo_path(@conn, :edit, @todo) %>
-<%= link "Back", to: todo_path(@conn, :index) %>
+  <div class="row">
+    <div class='col-sm-2 col-xs-2 col-md-2'></div>
+    <div class='col-sm-8 col-xs-8 col-md-8 todo-details'><%= @todo.details %></div>
+    <div class='col-sm-2 col-xs-2 col-md-2'></div>
+  </div>
+  <%= link "Back", to: todo_path(@conn, :index), class: "nav-btn footer-btn" %>
+</div>

@@ -1,13 +1,18 @@
 <div class="row">
+  <img src="https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/10697240_10204593887992230_1405725064426991989_o.jpg"  class="header-image"/>
+</div>
+<div class="row">
   <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/10377604_10204593882152084_6038489688587154327_n.jpg?oh=9f81dc17f5077b63a1853694a71b4c57&oe=5847CBF3"  class="header-image"/>
 </div>
 
-<div class="row">
-  <a class="btn btn-default nav-btn" href="https://api.instagram.com/oauth/authorize/?client_id=ead4d0b7a0804193be03186cfac3b71d&redirect_uri=http://anna.ngrok.io/posts/&response_type=code">Images</a>
-</div>
-<div class="row">
-  <a class="btn btn-default nav-btn" href="/todos">To Do</a>
-</div>
-<div class="row">
-  <a class="btn btn-default nav-btn" href="/menu_items">Menu</a>
+<div class="buttons-container">
+  <div class="row">
+    <a class="btn btn-default nav-btn" href="https://api.instagram.com/oauth/authorize/?client_id=ead4d0b7a0804193be03186cfac3b71d&redirect_uri=http://anna.ngrok.io/posts/&response_type=code">Images</a>
+  </div>
+  <div class="row">
+    <a class="btn btn-default nav-btn" href="/todos">To Do</a>
+  </div>
+  <div class="row">
+    <a class="btn btn-default nav-btn" href="/menu_items">Menu</a>
+  </div>
 </div>

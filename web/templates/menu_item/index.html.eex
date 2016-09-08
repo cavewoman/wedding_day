@@ -1,26 +1,43 @@
-<div class="section-header">Menu</div>
+<div class="menu-header">
+  <div class="menu-text section-header">
+    Menu
+  </div>
+</div>
 
 <div class="menu-section">
   <div class="row course nav-btn">Starters</div>
   <%= for menu_item <- @menu_items do %>
     <%= if menu_item.section == "Starter" do %>
-        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+      <div class="btn btn-default menu-item">
+        <%= link "#{menu_item.name}", to: menu_item_path(@conn, :show, menu_item), class: "veg-link" %>
+        <span><img src="/images/veg.png" class='veg-icon'/></span>
+      </div>
     <% end %>
   <% end %>
 </div>
 <div class="menu-section">
   <div class="row course nav-btn">Entrees</div>
-  <%= for menu_item <- @menu_items do %>
-    <%= if menu_item.section == "Entree" do %>
-        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+    <%= for menu_item <- @menu_items do %>
+      <%= if menu_item.section == "Entree" do %>
+        <%= if menu_item.type == "Non Vegetarian" do %>
+          <%= link "#{menu_item.name}", to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+        <% else %>
+          <div class="btn btn-default menu-item">
+            <%= link "#{menu_item.name}", to: menu_item_path(@conn, :show, menu_item), class: "veg-link" %>
+            <span><img src="/images/veg.png" class='veg-icon'/></span>
+          </div>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
 </div>
 <div class="menu-section">
   <div class="row course nav-btn">Sides</div>
   <%= for menu_item <- @menu_items do %>
     <%= if menu_item.section == "Side" do %>
-        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+      <div class="btn btn-default menu-item">
+        <%= link "#{menu_item.name}", to: menu_item_path(@conn, :show, menu_item), class: "veg-link" %>
+        <span><img src="/images/veg.png" class='veg-icon'/></span>
+      </div>
     <% end %>
   <% end %>
 </div>
@@ -28,7 +45,10 @@
   <div class="row course nav-btn">Dessert</div>
   <%= for menu_item <- @menu_items do %>
     <%= if menu_item.section == "Dessert" do %>
-        <%= link menu_item.name, to: menu_item_path(@conn, :show, menu_item), class: "btn btn-default menu-item" %>
+      <div class="btn btn-default menu-item">
+        <%= link "#{menu_item.name}", to: menu_item_path(@conn, :show, menu_item), class: "veg-link" %>
+        <span><img src="/images/veg.png" class='veg-icon'/></span>
+      </div>
     <% end %>
   <% end %>
 </div>

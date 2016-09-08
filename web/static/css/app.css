@@ -4,22 +4,88 @@
 .nav-btn {
   width: 100%;
   text-transform: uppercase;
-  font-family: monospace;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #000;
 }
 .post-image { width: 100%; }
 .section-header {
-  background: lavender;
   text-align: center;
   font-size: 100px;
+  font-weight: 100;
   text-transform: uppercase;
-  font-family: monospace;
-  color: darkseagreen;
+  color: #fff;
 }
 .course { text-align: center; }
 .menu-item {
   width: 100%;
   text-transform: uppercase;
-  font-family: monospace;
+  font-weight: 200;
   font-size: 15px;
+  padding-top: 9px;
+  border: none;
 }
+.footer-btn {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.todo-name {
+  text-align: center;
+  height: 300px;
+  font-size: 35px;
+  color: #ccc;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.todo-details { line-height: 2.5em; }
+.buttons-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.menu-header{
+  background-image: url("https://hd.unsplash.com/photo-1472393365320-db77a5abbecc");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.todo-header{
+  background-image: url("https://hd.unsplash.com/photo-1467810563316-b5476525c0f9");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menu-text { background: rgba(0,0,0,0.5); }
+.menu-item-header{
+  background-image: url("https://hd.unsplash.com/photo-1462015679637-c0c320830925");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menu-item-text {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+}
+.menu-item-details {
+  margin-top: 1em;
+  line-height: 2.5em;
+  text-align: justify;
+}
+.veg-icon {
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid green;
+  padding: 3px;
+  margin-left: 0.5em;
+  margin-bottom: 3px;
+}
+.veg-link {
+  color: #333;
+}
+.veg-link:focus {
+  text-decoration: none;
+  color: #333;
+}
+.menu-section { margin-top: 1em; }

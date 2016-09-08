@@ -4,6 +4,8 @@ defmodule WeddingDay.Todo do
   schema "todos" do
     field :name, :string
     field :details, :string
+    field :image_url, :string
+    field :title, :string
 
     timestamps()
   end
@@ -13,7 +15,7 @@ defmodule WeddingDay.Todo do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:name, :details])
-    |> validate_required([:name, :details])
+    |> cast(params, [:name, :details, :image_url, :title])
+    |> validate_required([:name, :details, :image_url, :title])
   end
 end

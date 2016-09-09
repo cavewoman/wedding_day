@@ -13,6 +13,13 @@ defmodule WeddingDay.Router do
     plug :accepts, ["json"]
   end
 
+  scope "/auth", WeddingDay do
+    pipe_through :browser
+
+    get "/instagram", AuthController, :request
+    get "/instagram/callback", AuthController, :callback
+  end
+
   scope "/", WeddingDay do
     pipe_through :browser # Use the default browser stack
 

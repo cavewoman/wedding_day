@@ -1,6 +1,8 @@
 <div class='todo-container'>
-  <div class='row'>
-    <div class='<%= "col-sm-12 col-xs-12 col-md-12 todo-name #{@todo.title}" %>' style='<%= "background-image: url(\"#{@todo.image_url}\")" %>'><%= @todo.name %></div>
+  <div class="todo-item-header" style='<%= "background-image: url(\"#{@todo.image_url}\")" %>'>
+    <div class="todo-title section-header">
+      <%= @todo.name %>
+    </div>
   </div>
 
   <div class="row">

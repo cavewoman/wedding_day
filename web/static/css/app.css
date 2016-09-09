@@ -30,14 +30,6 @@
   bottom: 0;
   text-align: center;
 }
-.todo-name {
-  text-align: center;
-  height: 300px;
-  font-size: 35px;
-  color: #ccc;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
 .todo-details { line-height: 2.5em; }
 .buttons-container {
   position: absolute;
@@ -89,3 +81,16 @@
   color: #333;
 }
 .menu-section { margin-top: 1em; }
+.todo-item-header {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.todo-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  min-height: 200px;
+}

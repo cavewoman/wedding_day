@@ -1,5 +1,5 @@
 <div class='todo-container'>
-  <div class="todo-item-header" style='<%= "background-image: url(\"#{@todo.image_url}\")" %>'>
+  <div class="todo-item-header" style='<%= "background-image: url(\"/images/#{@todo.image_url}\")" %>'>
     <div class="todo-title section-header">
       <%= @todo.name %>
     </div>

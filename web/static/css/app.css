@@ -37,18 +37,18 @@
   width: 100%;
 }
 .menu-header{
-  background-image: url("https://hd.unsplash.com/photo-1472393365320-db77a5abbecc");
+  background-image: url("/images/foodie.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .todo-header{
-  background-image: url("https://hd.unsplash.com/photo-1467810563316-b5476525c0f9");
+  background-image: url("/images/sparklers.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .menu-text { background: rgba(0,0,0,0.5); }
 .menu-item-header{
-  background-image: url("https://hd.unsplash.com/photo-1462015679637-c0c320830925");
+  background-image: url("/images/plate-setting.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
 }

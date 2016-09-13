@@ -26,9 +26,8 @@ defmodule WeddingDay.AuthController do
       {:ok, user} ->
         conn
         |> put_flash(:info, "Successfully authenticated. Hey #{user.name}")
-        |> IO.inspect()
         |> put_session(:current_user, user)
-        |> redirect(to: "/")
+        |> redirect(to: "/posts")
       {:error, reason} ->
         conn
         |> put_flash(:error, reason)

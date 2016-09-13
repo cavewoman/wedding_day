@@ -4,9 +4,12 @@ defmodule WeddingDay.PostController do
   alias WeddingDay.Post
 
   def index(conn, _params) do
-    IO.puts "PARAMS #{_params[:code]}"
-    posts = Repo.all(Post)
-    render(conn, "index.html", posts: posts)
+    user = conn
+    |> get_session(:current_user)
+
+    images = InstagramPost.get_images(user.token)
+    # posts = Repo.all(Post)
+    render(conn, "index.html", images: images)
   end
 
   def new(conn, _params) do

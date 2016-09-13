@@ -19,7 +19,7 @@ defmodule WeddingDay.Mixfile do
   def application do
     [mod: {WeddingDay, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :ueberauth, :ueberauth_instagram]]
+                    :phoenix_ecto, :postgrex, :ueberauth, :ueberauth_instagram, :httpoison]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,7 +39,8 @@ defmodule WeddingDay.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:ueberauth, "~> 0.3"},
-     {:ueberauth_instagram, path: "../../personal/ueberauth_instagram"}]
+     {:ueberauth_instagram, path: "../../personal/ueberauth_instagram"},
+     {:httpoison, "~> 0.9.0"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.

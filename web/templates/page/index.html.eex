@@ -7,7 +7,7 @@
 
 <div class="buttons-container">
   <div class="row">
-    <a class="btn btn-default nav-btn" href="https://api.instagram.com/oauth/authorize/?client_id=ead4d0b7a0804193be03186cfac3b71d&redirect_uri=http://anna.ngrok.io/posts/&response_type=code">Images</a>
+    <a class="btn btn-default nav-btn" href="/posts">Images</a>
   </div>
   <div class="row">
     <a class="btn btn-default nav-btn" href="/todos">To Do</a>

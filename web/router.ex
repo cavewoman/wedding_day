@@ -27,6 +27,9 @@ defmodule WeddingDay.Router do
     resources "/posts", PostController
     resources "/todos", TodoController
     resources "/menu_items", MenuItemController
+    get "instagram_endpoint", InstagramSubscriptionController, :instagram_sub_verfication
+    post "instagram_endpoint", InstagramSubscriptionController, :user_instagram_posts
+    get "subscribe_to_instagram", InstagramSubscriptionController, :instagram_sub_request
   end
 
   # Other scopes may use custom stacks.
